@@ -17,8 +17,9 @@ and placed them in an easy to use & Deploy Dockre container.
 - **ENV     HUBOT_HIPCHAT_PASSWORD *** **
 
 - build the docker container
+```bash
     cd hubot-hipchat-docker && docker build -t private_repo/hubot
-
+```
 - start the container
 ```bash
     docker run -d --name hubot private_repo/hubot
