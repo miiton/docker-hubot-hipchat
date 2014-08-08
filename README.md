@@ -13,8 +13,8 @@ and placed them in an easy to use & Deploy Dockre container.
     git clone https://github.com/odedpr/hubot-hipchat-docker.git
 ```
 - Update the following with your JID and PASSWD in the docker file :
---ENV     HUBOT_HIPCHAT_JID *******@chat.hipchat.com
---ENV     HUBOT_HIPCHAT_PASSWORD
+1.  ENV     HUBOT_HIPCHAT_JID *******@chat.hipchat.com
+2.  ENV     HUBOT_HIPCHAT_PASSWORD
 
 - build the docker container
 ```bash
