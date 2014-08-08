@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# npm install
+export PATH="/src/node_modules/.bin:/src/node_modules/hubot/node_modules/.bin:$PATH"
+
+exec /src/node_modules/.bin/hubot "$@"
+
