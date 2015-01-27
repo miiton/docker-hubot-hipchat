@@ -25,6 +25,8 @@ docker build -t my/hubot
 docker run -d --name hubot \
     -e "HUBOT_HIPCHAT_JID=????@chat.hipchat.com" \
     -e "HUBOT_HIPCHAT_PASSWORD=myhubotpasswd" \
+    -e "HUBOT_RSS_INTERVAL=600" \
+    -e "HUBOT_RSS_HEADER=(tea)" \
     my/hubot
 ```
 
