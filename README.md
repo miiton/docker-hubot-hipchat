@@ -10,7 +10,7 @@ and placed them in an easy to use & Deploy Dockre container.
 ## deployment
 - clone the repo
 ```bash
-    git clone https://github.com/odedpr/hubot-hipchat-docker.git
+    git clone https://github.com/odedpr/docker-hubot-hipchat.git
 ```
 - Update the following with your JID and PASSWD in the docker file :
 > ENV     HUBOT_HIPCHAT_JID *******@chat.hipchat.com<br/>
@@ -18,9 +18,13 @@ and placed them in an easy to use & Deploy Dockre container.
 
 - build the docker container
 ```bash
-    cd hubot-hipchat-docker && docker build -t private_repo/hubot
+docker build -t my/hubot
 ```
 - start the container
 ```bash
-    docker run -d --name hubot private_repo/hubot
+docker run -d --name hubot \
+    -e "HUBOT_HIPCHAT_JID=????@chat.hipchat.com" \
+    -e "HUBOT_HIPCHAT_PASSWORD=myhubotpasswd" \
+    my/hubot
 ```
+
